@@ -14,38 +14,63 @@ def prep_df(input_df,sample_size, max_price):
     df= df.sample(frac = sample_size)
     df = df[df['price'] <= max_price]  
     return df
+def carat_eda():
+    diamonddf.plot.scatter('price', 'carat', figsize =(4,4), title = "Diamond Carat VS Diamond Price")
+    return plt.show()
 
 def price_nonum_characteristic(column):
     '''This function takes a prepped dataframe and sorts diamonds by price and returns a bar chart
     with the average price of a diamond against a non numerical or categorical characteristic inputted by user'''
-    if isinstance(column, str):
-        print('Please enter a non numeric column.')
-    else:    
-        df2= df.sort_values(['price'], ascending=False).groupby(column).mean()
-        x= df2.index
-        y=df2['price']
-        plt.figure(figsize=(8, 8))
-        plt.bar(x, y)
-        plt.title('Diamond {} Vs Diamond Average Price'.format(column.capitalize()))
-        plt.xlabel('Carats')
-        plt.ylabel('Price')
-        return plt.show()
+    df2= df.sort_values(['price'], ascending=False).groupby(column).mean()
+    x= df2.index
+    y=df2['price']
+    plt.figure(figsize=(4, 4))
+    plt.bar(x, y)
+    plt.title('Diamond {} Vs Diamond Average Price'.format(column.capitalize()))
+    plt.xlabel(column.capitalize())
+    plt.ylabel('Price')
+    return plt.show()
 
 def price_num_characteristic(column):
     '''This function takes a prepped dataframe and sorts diamonds by average price and
     returns a graph of average diamond price against a numerical characteristic input by the user'''
-    if isinstance(column, str):
-        print('Please enter a numeric column.')
-    else:    
-        df2 = df.sort_values(['price'], ascending=False).groupby(column).mean()
-        x= df2.index
-        y=df2['price']
-        plt.figure(figsize=(8, 8))
-        plt.plot(x, y)
-        plt.title('Diamond {} Vs Diamond Average Price'.format(column.capitalize()))
-        plt.xlabel('Carats')
-        plt.ylabel('Price')
-        return plt.show()
+    df2 = df.sort_values(['price'], ascending=False).groupby(column).mean()
+    x= df2.index
+    y=df2['price']
+    plt.figure(figsize=(4, 4))
+    plt.plot(x, y)
+    plt.title('Diamond {} Vs Diamond Average Price'.format(column.capitalize()))
+    plt.xlabel(column.capitalize())
+    plt.ylabel('Price')
+    return plt.show()
+
+def price_clarity(column):
+    '''This function takes a prepped dataframe and sorts diamonds by price and returns a bar chart
+    with the average price of a diamond against clarity'''
+    df2= df.sort_values(['price'], ascending=False).groupby(column).mean()
+    df2 = df2.reindex(['I1', 'SI2', 'SI1', 'VS2', 'VS1', 'VVS2', 'VVS1', 'IF']) 
+    x= df2.index
+    y=df2['price']
+    plt.figure(figsize=(4, 4))
+    plt.bar(x, y)
+    plt.title('Diamond {} Vs Diamond Average Price'.format(column.capitalize()))
+    plt.xlabel('Clarity')
+    plt.ylabel('Price')
+    return plt.show()
+
+def price_color(column):
+    '''This function takes a prepped dataframe and sorts diamonds by price and returns a bar chart
+    with the average price of a diamond against clarity'''
+    df2= df.sort_values(['price'], ascending=False).groupby(column).mean()
+    df2 = df2.reindex(['J','I','H','G','F', 'E', 'D']) 
+    x= df2.index
+    y=df2['price']
+    plt.figure(figsize=(4, 4))
+    plt.bar(x, y)
+    plt.title('Diamond Color Vs Diamond Average Price')
+    plt.xlabel('Color')
+    plt.ylabel('Price')
+    return plt.show()
 
 def percentage_carat_sold(max_carat, min_carat, input_df):
     '''This function takes a dataframe and returns the percentage of diamonds that are 
@@ -68,11 +93,24 @@ def graph_carat_price(max_carat, min_carat):
     diamonds_srt_carat = diamonds_srt_carat.sort_values(['price'], ascending=False).groupby('carat').mean()
     x= diamonds_srt_carat.index
     y= diamonds_srt_carat['price']
-    plt.figure(figsize=(5, 5))
+    plt.figure(figsize=(4, 4))
     plt.plot(x, y)
     plt.title('Diamond Carat Vs Diamond Average Price')
     plt.xlabel('Carats')
     plt.ylabel('Price')
     plt.xticks(np.arange(min(x), max(x)+0.1, 0.1))
     plt.yticks(np.arange(0, max(y)+1, 500))
+    return plt.show()
+
+def price_cut(column):
+    '''This function takes a prepped dataframe and sorts diamonds by price and returns a bar chart
+    with the average price of a diamond against Cut'''
+    df2= df.sort_values(['price'], ascending=False).groupby(column).mean()
+    x= df2.index
+    y=df2['price']
+    plt.figure(figsize=(6, 4))
+    plt.bar(x, y)
+    plt.title('Diamond Cut Vs Diamond Average Price')
+    plt.xlabel('Cut')
+    plt.ylabel('Price')
     return plt.show()
