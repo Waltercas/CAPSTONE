@@ -1,6 +1,6 @@
 <img src="https://cisp.cachefly.net/assets/articles/images/resized/0000915734_resized_diamonds1022.jpg" alt="Test Image 1" style="zoom: 50%;" />
 
-## Diamonds
+# Diamonds
 
 ## Background/Story
 
@@ -47,6 +47,8 @@ Another fact about diamond carats to know is that even the smallest increase in 
 
 Diamond color is the next characteristic I explored. Diamond color can be confusing as when we refer to color in a diamond we are looking at the lack of color or colorlessness. The closer to colorlessness the higher quality the diamond is. In the diamond industry color ranges from Z to D. D being the highest quality. In the data set I explored it ranges from J (worst) to D (best). 
 
+
+
 <img src="Images/Diamond Color VS Price.png"   >
 
 When I plotted the color and price of diamonds I found a very conflicting answer. According to my data set the best rating of color (D) appears to have the second lowest average price the only lower average price is actually the second best rating. This confused me as one could expect because it only makes sense for the better quality the higher the price but in this data set it actually is not the case. This leads to believe me that there must be other factor or factors at play that influence the price more than color. Although interesting that is something that can be investigated further on a subsequent analysis. 
@@ -66,3 +68,17 @@ The beauty of a diamond depends more on the cut of a diamond than anything else.
 <img src="Images/Diamond Cut VS Price.png"  >
 
 In this graph we can see one very interesting thing. The Ideal cut is the lowest average price while also being a good middle ground in quality. So it is safe to say that in this data set diamonds of ideal cut provide more bang for your buck as you can get a decent quality diamond for a relatively low price. Again the lowest quality has the highest price due to the sheer amount of diamonds sold at that quality level, although the others are not very far behind.
+
+## Conclusion
+
+In conclusion diamonds and their price are very different and every diamond is unique. In the diamond business the 4 C's are big in determining price of a diamond. 
+
+Carat is one of the most important ones when talking about price. Carats can raise the price of a diamond exponentially, it is also important to remember most diamonds sold to consumers are below 1 carat and even a change in the smallest measurement of carats (points) can drastically increase the price.
+
+Color actually refers to the lack of color in a diamond the closer to colorlessness the better quality. Color ranges from Z (worst) to D (best), color usually causes an increase in price also but we can see that other factors come into play that may overshadow the quality of color. 
+
+Clarity refers to the lack of defects in a diamond. The natural occurrence of diamonds make them prone to imperfections that arise during their formation.  Clarity ranges from Included meaning obvious imperfections to flawless or diamonds with imperfections that are only visible using 10x magnification.
+
+Cut does not mean shape but instead is the quality of the cut of a diamond. Methods to cutting diamonds vary and more advanced methods and technology like laser cutting can result in high quality cuts.
+
+In retrospective diamond price is hard to determine based off one specific characteristic just like its features they all have part in creating a beautiful diamond and you cannot have a diamond with just one of its characteristics.
