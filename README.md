@@ -4,7 +4,7 @@
 
 ## Background/Story
 
-Diamonds, we all know and love them, but other than how pretty they are the next thing in your head might be how expensive they are. In our day and age diamonds are everywhere, an individual cannot hope to be married without having to buy one or multple diamonds. Having a wife myself I have had to purchase diamonds in the past but I never really understood what gives a diamond its price. In this project I aim to assist an everyday consumer like you and I (assuming you aren't a millionaire) understand better what gives a diamond its value.  
+Diamonds, we all know and love them, but other than how pretty they are the next thing in your head might be how expensive they are. In our day and age diamonds are everywhere, an individual cannot hope to be married without having to buy one or multiple diamonds. Having a wife myself I have had to purchase diamonds in the past but I never really understood what gives a diamond its price. In this project I aim to assist an everyday consumer like you and I (assuming you aren't a millionaire) understand better what gives a diamond its value.  
 
 ## Data
 
@@ -35,7 +35,7 @@ The carat of a diamond is often the first thing people think about when purchasi
 
 
 
-<img src="/home/walter/Desktop/CAPSTONE/CAPSTONE/Images/Diamond Carat VS Price EDA.png" style="zoom: 80%;" />
+<img src="Images/Diamond Carat VS Price EDA.png" style="zoom: 80%;" />
 
 In this scatter plot you can see the average price of diamonds vs carats. This scatter plot brought to my attention several important points. First is that the vast majority of diamonds sold in this data set are actually of very low carat. In fact in this sample of diamonds 36,438 of them are under a carat which is 67% of the whole . This makes me feel better about not buying my wife a carat diamond! Also worth noting is that past 3 carats not many diamonds are sold only 0.05% or 32 diamonds are over 3 carats!
 
