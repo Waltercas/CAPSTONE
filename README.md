@@ -13,13 +13,13 @@ The data used in this project derives from data acquired from Kaggle. The data s
 The dataset I used has two distinct classifications for the diamond characteristics: 
 Numerical:
 
-          * Carat = weight of the diamond which ranges from 0.2 to 5.
-                    * Depth = percentage of depth in a diamond which ranges from 43 to 79.
-                    * Price = price in USD which ranges from $326 to $18823
-                    Categorical:
-                              * Cut = quality of the cut ranging from Fair, Good, Very Good, Premium, Ideal in order.
-                                        * Clarity = clarity of the diamond ranging from worst to best I1, SI2, SI1, VS2, VS1, VVS2, VVS1, IF 
-                                        * Color = color of diamond ranging from worst to best J to D
+   Carat = weight of the diamond which ranges from 0.2 to 5.
+   Depth = percentage of depth in a diamond which ranges from 43 to 79.
+   Price = price in USD which ranges from $326 to $18823
+            Categorical:
+                       Cut = quality of the cut ranging from Fair, Good, Very Good, Premium, Ideal in order.
+                                Clarity = clarity of the diamond ranging from worst to best I1, SI2, SI1, VS2, VS1, VVS2, VVS1, IF 
+                        Color = color of diamond ranging from worst to best J to D
 
 <img src="https://beyond4cs.com/wp-content/uploads/2020/12/4Cs-of-diamond-quality-chart-gia-reference.jpg" alt="GIA%20Diamond%20Chart.jpg" style="zoom: 67%;" />
 
