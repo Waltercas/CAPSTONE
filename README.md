@@ -35,12 +35,10 @@ The carat of a diamond is often the first thing people think about when purchasi
 
 
 
-<img src="Images/Diamond Carat VS Price EDA.png" style="zoom: 80%;" />
+<img src="Images/Diamond Carat VS Price EDA.png" style="zoom: 67%;" />
 
 In this scatter plot you can see the average price of diamonds vs carats. This scatter plot brought to my attention several important points. First is that the vast majority of diamonds sold in this data set are actually of very low carat. In fact in this sample of diamonds 36,438 of them are under a carat which is 67% of the whole . This makes me feel better about not buying my wife a carat diamond! Also worth noting is that past 3 carats not many diamonds are sold only 0.05% or 32 diamonds are over 3 carats!
 
-<img src=''Images/Diamond Carat Vs Diamond Price 0-1 Carat.png" />
-
-![](Images/Diamond Carat Vs Diamond Price 0-1 Carat.png)
+<img src="Images/Diamond Carat Vs Diamond Price 0-1 Carat.png" style="zoom:80%;" >
 
 Another fact about diamond carats to know is that even the smallest increase in carat can cause the price to rise significantly. This graph shows a steady increase in price even when the carat changes by 0.1 or 10 points. 
