@@ -7,7 +7,7 @@ from scipy import stats
 
 
 def prep_df(input_df,sample_size, max_price):
-    '''This function takes a raw dataframe with all value and reduces it to a size and 
+    '''This function takes a raw dataframe with all value and reduces it to chosen size and 
     takes the max price for a diamond that the user is working with and returns a dataframe'''
     global df
     df = input_df.drop('Unnamed: 0', 1)
@@ -85,6 +85,7 @@ def price_cut(column):
     '''This function takes a prepped dataframe and sorts diamonds by price and returns a bar chart
     with the average price of a diamond against Cut'''
     df2= df.sort_values(['price'], ascending=False).groupby(column).mean()
+    df2 = df2.reindex(['Fair', 'Good', 'Very Good', 'Premium', 'Ideal']) 
     x= df2.index
     y=df2['price']
     plt.figure(figsize=(6, 4))
@@ -127,10 +128,10 @@ if __name__ == '__main__':
     diamonddf = pd.read_csv('../Data/diamonds.csv')
 
     '''Remove extra column, select smaple size and limit by price.'''
-    prep_df(diamonddf,1, 10000)
+    #prep_df(diamonddf,1, 10000)
 
     '''Display EDA scatter plot of Diamond carat vs diamond price.'''
-    carat_eda(diamonddf)
+    #carat_eda(diamonddf)
 
     '''Print percentage of diamonds from selected range of carats '''
     #percentage_carat_sold(5, 3, diamonddf)

@@ -71,7 +71,7 @@ The beauty of a diamond depends more on the cut of a diamond than anything else.
 
 <img src="Images/Diamond Cut VS Price.png"  >
 
-In this graph we can see one very interesting thing. The Ideal cut is the lowest average price while also being a good middle ground in quality. So it is safe to say that in this data set diamonds of ideal cut provide more bang for your buck as you can get a decent quality diamond for a relatively low price. Again the lowest quality has the highest price due to the sheer amount of diamonds sold at that quality level, although the others are not very far behind.
+In this graph we can see one very interesting thing. Even though quantity skews the average price greatly with other characteristics, different types of cuts have generally similar average prices. I believe this is because cut actually has little to do with the diamond but rather with how well the manufacturer cuts the diamond. 
 
 
 
@@ -80,8 +80,6 @@ In this graph we can see one very interesting thing. The Ideal cut is the lowest
 In conclusion diamonds and their price are very different and every diamond is unique. In the diamond business the 4 C's are big in determining price of a diamond. 
 
 Carat is one of the most important ones when talking about price. Carats can raise the price of a diamond exponentially, it is also important to remember most diamonds sold to consumers are below 1 carat and even a change in the smallest measurement of carats (points) can drastically increase the price.
-
-a
 
 Clarity refers to the lack of defects in a diamond. The natural occurrence of diamonds make them prone to imperfections that arise during their formation.  Clarity ranges from Included meaning obvious imperfections to flawless or diamonds with imperfections that are only visible using 10x magnification.
 
